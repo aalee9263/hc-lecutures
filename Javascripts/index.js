@@ -196,3 +196,85 @@ console.log(text.repeat(2)); // Repeats text twice
 console.log(text.padStart(30, "*")); // Pads text to length of 30 from start
 console.log(text.padEnd(30, "*")); // Pads text to length of 30 from end
 */
+
+//+++++++Number Methods+++++++
+/*
+// 1. Convert other types to Number
+console.log(Number("123")); // 123
+console.log(Number("123abc")); // NaN
+console.log(Number(true)); // 1
+
+// 2. Parse a string as an integer
+console.log(parseInt("42")); // 42
+console.log(parseInt("42px")); // 42
+console.log(parseInt("101", 2)); // 5 (binary to decimal)
+
+// 3. Parse a string as a floating-point number
+console.log(parseFloat("3.14")); // 3.14
+console.log(parseFloat("3.14px")); // 3.14
+
+// 4. Convert a number to a string with fixed decimals
+let num = 3.14159;
+console.log(num.toFixed(2)); // "3.14"
+
+// 5. Format a number to a specified precision
+console.log(num.toPrecision(3)); // "3.14"
+console.log(num.toPrecision(2)); // "3.1"
+
+// 6. Convert a number to a string with an optional radix
+console.log(num.toString()); // "3.14159"
+console.log(255..toString(16)); // "ff" (hexadecimal)
+
+// 7. Convert a number to exponential notation
+console.log(num.toExponential(2)); // "3.14e+0"
+
+// 8. Round to the nearest integer
+console.log(Math.round(4.6)); // 5
+console.log(Math.round(4.4)); // 4
+
+// 9. Round up to the nearest integer
+console.log(Math.ceil(4.1)); // 5
+
+// 10. Round down to the nearest integer
+console.log(Math.floor(4.9)); // 4
+
+// 11. Remove the decimal part, returning only the integer
+console.log(Math.trunc(4.9)); // 4
+
+// 12. Return the absolute value of a number
+console.log(Math.abs(-42)); // 42
+
+// 13. Return a number raised to a power
+console.log(Math.pow(2, 3)); // 8 (2^3)
+
+// 14. Return the square root of a number
+console.log(Math.sqrt(16)); // 4
+
+// 15. Find the minimum or maximum value from a list of numbers
+console.log(Math.min(3, 7, 1, 4)); // 1
+console.log(Math.max(3, 7, 1, 4)); // 7
+
+// 16. Generate a random decimal between 0 and 1
+console.log(Math.random()); // Random decimal between 0 and 1
+*/
+
+// const hundreds = 1000000
+// console.log(hundreds.toLocaleString('en-US')); // 1,000,000 It is US Methodd
+// console.log(hundreds.toLocaleString('en-IN')); // 10,00,000 It is Indian Method
+
+// console.log(Math);
+// console.log(Math.abs(-4));           // 4
+// console.log(Math.round(4.6));        // 4
+// console.log(Math.ceil(4.2));         // 5 upper waly number ko ly ga
+// console.log(Math.floor(4.9));        // 4 nechy waly number ko ly ga
+// console.log(Math.min(4, 3, 6, 8));   // 3
+// console.log(Math.max(4, 3, 6, 8));   // 8
+
+// console.log(Math.random());          // give value b/w 0 and 1
+// console.log((Math.random()*10) + 1); 
+// console.log(Math.floor(Math.random()*10) + 1);
+
+// const min = 10
+// const max = 20
+
+// console.log(Math.floor(Math.random() * (max - min + 1)) + min)
