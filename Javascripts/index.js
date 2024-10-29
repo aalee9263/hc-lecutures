@@ -153,3 +153,46 @@ const anotherId = Symbol('123')
 
 // for documentation of about typeof read this....> https://262.ecma-international.org/5.1/#sec-11.4.3
 
+// Stack (primitive)      Heap (Non primitive)
+
+// let name = Arshad
+// use back tick method. like ... console.log(`my name is ${name}`)
+/*
+// read all strings method. prototypes
+let text = "Hello, JavaScript World!";
+
+// 1. Length
+console.log(text.length); // Number of characters
+
+// 2. Case Conversion
+console.log(text.toUpperCase()); // Converts to uppercase
+console.log(text.toLowerCase()); // Converts to lowercase
+
+// 3. Searching
+console.log(text.indexOf("JavaScript")); // First occurrence index or -1 if not found
+console.log(text.lastIndexOf("o")); // Last occurrence index
+console.log(text.includes("World")); // true if found, otherwise false
+console.log(text.startsWith("Hello")); // true if it starts with substring
+console.log(text.endsWith("!")); // true if it ends with substring
+
+// 4. Extracting Substrings
+console.log(text.slice(7, 17)); // Extracts from index 7 to 17 (excluding 17)
+console.log(text.substring(7, 17)); // Similar to slice but no negative indices
+console.log(text.substr(7, 10)); // Extracts 10 characters from index 7
+
+// 5. Replacing and Modifying
+console.log(text.replace("World", "Universe")); // Replaces first occurrence
+console.log(text.replaceAll("o", "O")); // Replaces all occurrences
+console.log(text.trim()); // Removes whitespace from both ends
+console.log(text.trimStart()); // Removes whitespace from start
+console.log(text.trimEnd()); // Removes whitespace from end
+
+// 6. Splitting and Joining
+console.log(text.split(" ")); // Splits into an array by spaces
+console.log(text.concat(" Let's learn!")); // Joins strings
+
+// 7. Repeating and Padding
+console.log(text.repeat(2)); // Repeats text twice
+console.log(text.padStart(30, "*")); // Pads text to length of 30 from start
+console.log(text.padEnd(30, "*")); // Pads text to length of 30 from end
+*/
