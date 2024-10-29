@@ -25,7 +25,7 @@ because of issue in block scope and functional scope
 */
 
 /*
-"use strict"; // treat all JS code as newer version. 8,9 purani js aur abhi wali me bohat farq hai. to abhi wali ko use kerny k liye use strict ka use kerty hain .
+"use strict"; // treat all JS code as newer version. 8,9 saal purani js aur abhi wali me bohat farq hai. to abhi wali ko use kerny k liye 'use strict'  ka use kerty hain .
 
 // alert( 3 + 3) // it works only on browser and we are using node.js
 
@@ -55,8 +55,8 @@ console.log(typeof Symbol); // function
 
 // after conversation in number
 // let score1 = "Arhsad"     //=> string
-// let score2 = "26"         //=>  
-// let score3 = "26number"   //=>
+// let score2 = "26"         //=>  number
+// let score3 = "26number"   //=> NaN
 // let score4 = true         //=>
 // let score5 = false        //=>    
 // let score6 = null         //=>
@@ -110,10 +110,46 @@ let str3 = str1 + str2
 // console.log(null == 0); //false 
 // console.log(null >= 0); //true
 
-// above reason is that, equality check == and comparisonsn ><>= work differently. comparisonsn convert null to a numbe,r treating it as 0, that's why {console.log(null >= 0);} is true and {console.log(null > 0);} is false
+// above reason is that, equality check == and comparisonsn ><>= work differently. comparisonsn convert null to a number treating it as 0, that's why {console.log(null >= 0);} is true and {console.log(null > 0);} is false
 
 // console.log(undefined > 0);
 // console.log(undefined < 0);
 // console.log(undefined == 0); undefined will always false with every comparison
 
-// strict check called. ..> '==' just check equality and '==='  check equality with datatype
+// '==' called strict check. ..> '==' just check equality and '==='  check equality with datatype
+
+
+//  there are 2 data types .{Primitive and non primitive}  
+
+//1.  primitive ...>  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
+
+//2. Non primitive ...>// By Reference (Non primitive)  Array, Objects, Functions
+
+const score = 26            // number 
+const score1 = 26.25        // nymber
+const isLoggedIn = false    // boolean
+const outSideTemp = null    // object ....null ki typeof hamesha object hoti
+let userEmail;              // undefined
+let myFunction = function() {} // function object
+// console.table([typeof score, typeof score1, typeof isLoggedIn, typeof outSideTemp, typeof userEmail]);
+
+
+const id = Symbol('123')
+const anotherId = Symbol('123')
+
+console.log(id === anotherId); // false .. symbol ki value  kabhi bhi equal ni hoti. 
+
+//2. Non primitive ...>// By Reference (Non primitive)  Array, Objects, Functions
+
+// let heros = [iqbal, saad, liaqat, ahmed]
+// let myObj = 
+// {
+//     name: "Arshad",
+//     age: 18,
+
+// // }
+// // let myFunction2 = function(){}
+// // console.log(typeof myFunction);
+
+// for documentation of about typeof read this....> https://262.ecma-international.org/5.1/#sec-11.4.3
+
