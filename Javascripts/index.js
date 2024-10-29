@@ -137,7 +137,7 @@ let myFunction = function() {} // function object
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId); // false .. symbol ki value  kabhi bhi equal ni hoti. 
+// console.log(id === anotherId); // false .. symbol ki value  kabhi bhi equal ni hoti. 
 
 //2. Non primitive ...>// By Reference (Non primitive)  Array, Objects, Functions
 
