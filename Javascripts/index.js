@@ -23,6 +23,7 @@ console.table([accoutId, accountEmail, accountPassword, accountCity, accountStat
 Prefer not to use var
 because of issue in block scope and functional scope
 */
+
 /*
 "use strict"; // treat all JS code as newer version. 8,9 purani js aur abhi wali me bohat farq hai. to abhi wali ko use kerny k liye use strict ka use kerty hain .
 
@@ -92,12 +93,27 @@ let str3 = str1 + str2
 // console.log("1" + 2 + 2);
 // console.log(1 + 2 + "2");
 
-console.log("1" + 1);
-console.log(1 + "1");
-console.log((1 + 1));
-console.log(1 + 1 * 5);
+// console.log("1" + 1);
+// console.log(1 + "1");
+// console.log((1 + 1));
+// console.log(1 + 1 * 5);
 
 
-read increament ++, decreament --
+// read increament ++, decreament --
 // link to study
 // https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
+
+//**********comparison operator **********/
+
+
+// console.log(null > 0); //false
+// console.log(null == 0); //false 
+// console.log(null >= 0); //true
+
+// above reason is that, equality check == and comparisonsn ><>= work differently. comparisonsn convert null to a numbe,r treating it as 0, that's why {console.log(null >= 0);} is true and {console.log(null > 0);} is false
+
+// console.log(undefined > 0);
+// console.log(undefined < 0);
+// console.log(undefined == 0); undefined will always false with every comparison
+
+// strict check called. ..> '==' just check equality and '==='  check equality with datatype
